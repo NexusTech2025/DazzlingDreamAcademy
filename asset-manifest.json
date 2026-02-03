@@ -1,0 +1,12 @@
+{
+  "files": {
+    "main.css": "/DazzlingDreamAcademy/static/css/main.31d6cfe0.css",
+    "main.js": "/DazzlingDreamAcademy/static/js/main.a7e2b217.js",
+    "index.html": "/DazzlingDreamAcademy/index.html",
+    "main.a7e2b217.js.map": "/DazzlingDreamAcademy/static/js/main.a7e2b217.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.31d6cfe0.css",
+    "static/js/main.a7e2b217.js"
+  ]
+}
