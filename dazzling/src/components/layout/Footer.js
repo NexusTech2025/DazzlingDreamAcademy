@@ -4,6 +4,7 @@ import {
   MapPin, 
   ArrowRight
 } from 'lucide-react';
+import images from '../../assets/images.js';
 
 const Footer = ({ setPage }) => (
   <footer className="bg-[#0A0F14] text-white pt-16 pb-8 border-t-4 border-[#D4AF37]">
@@ -12,7 +13,7 @@ const Footer = ({ setPage }) => (
         {/* Brand */}
         <div>
           <div className="flex items-center mb-6">
-            <img src="/assets/images/DSquare Logo 400.png" alt="Dazzling Dream" className="h-10 w-10 mr-3" />
+            <img src={images.logo} alt="Dazzling Dream" className="h-10 w-10 mr-3" />
             <div>
               <span className="text-xl font-bold block">Dazzling Dream</span>
               <span className="text-xs text-[#D4AF37] tracking-widest uppercase">Academy</span>
@@ -57,7 +58,7 @@ const Footer = ({ setPage }) => (
             </li>
             <li className="flex items-start">
               <MapPin size={18} className="text-[#D4AF37] mr-3 flex-shrink-0 mt-1" />
-              <span>Near Central Library, Education City</span>
+              <span>9, Jagat Vihar, Near PNB Bank, Jagatpura Phatak, Jaipur</span>
             </li>
           </ul>
         </div>

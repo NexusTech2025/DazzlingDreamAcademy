@@ -11,14 +11,15 @@ import {
   Gift,
   Layout
 } from 'lucide-react';
+import images from '../../assets/images.js';
 
 const Home = ({ setPage }) => {
   return (
     <div className="pt-16 bg-gray-50">
       {/* Hero Section */}
-      <div 
+      <div id="hero-container"
         className="relative bg-cover bg-center overflow-hidden" 
-        style={{ backgroundImage: "url('/assets/images/hero2 800h.png')" }}
+        style={{ backgroundImage: `url('${images.heroBg}')` }}
       >
         <div className="absolute inset-0 bg-[#0F2A44] bg-opacity-60"></div> {/* Overlay for readability */}
 
@@ -64,7 +65,7 @@ const Home = ({ setPage }) => {
         {/* Image (Right Side, absolute) */}
         <div className="absolute top-0 right-0 h-full w-1/2 hidden lg:flex justify-end items-center">
           <img
-            src="/assets/images/hero theme.png"
+            src={images.heroTheme}
             alt="Dazzling Dream Theme Image"
             className="h-full w-auto object-contain object-right"
           />

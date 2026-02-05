@@ -1,0 +1,68 @@
+@keyframes float-slow {
+    0%, 100% { transform: translateY(0) rotate(0deg); }
+    50% { transform: translateY(-8px) rotate(2deg); }
+}
+@keyframes float-delayed {
+    0%, 100% { transform: translateY(0) rotate(0deg); }
+    50% { transform: translateY(-6px) rotate(-2deg); }
+}
+.animate-float {
+    animation: float-slow 6s ease-in-out infinite;
+}
+.animate-float-delayed {
+    animation: float-delayed 7s ease-in-out infinite 1s;
+}
+.staggered-col {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+}
+.staggered-col:last-child {
+    margin-top: 3rem;
+}
+@media (max-width: 767px) {
+    .staggered-col:last-child {
+        margin-top: 0;
+    }
+}
+.glass-nav {
+  background: rgba(10, 25, 47, 0.7);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+.glass-card {
+  background: rgba(17, 34, 64, 0.6);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+.text-glow {
+  text-shadow: 0 0 20px rgba(0, 240, 255, 0.3);
+}
+.floating {
+  animation: float 6s ease-in-out infinite;
+}
+.floating-delayed {
+  animation: float 6s ease-in-out 2s infinite;
+}
+.floating-delayed-2 {
+  animation: float 6s ease-in-out 4s infinite;
+}
+@keyframes float {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+.grid-bg {
+  background-image:
+    linear-gradient(rgba(0, 240, 255, 0.1) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(0, 240, 255, 0.1) 1px, transparent 1px);
+  background-size: 40px 40px;
+}

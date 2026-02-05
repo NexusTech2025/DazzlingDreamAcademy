@@ -3,6 +3,7 @@ import {
   Menu, 
   X
 } from 'lucide-react';
+import images from '../../assets/images.js';
 
 const Header = ({ currentPage, setPage }) => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -30,7 +31,7 @@ const Header = ({ currentPage, setPage }) => {
             className="flex items-center cursor-pointer"
             onClick={() => setPage('home')}
           >
-            <img src="/assets/images/DSquare Logo 400.png" alt="Dazzling Dream" className="h-10 w-10 mr-3" />
+            <img src={images.logo} alt="Dazzling Dream" className="h-10 w-10 mr-3" />
             <div>
               <h1 className="text-xl font-bold text-white leading-tight tracking-wide">DAZZLING DREAM</h1>
               <p className="text-[10px] text-[#D4AF37] font-bold tracking-[0.2em] uppercase">ACADEMY</p>
