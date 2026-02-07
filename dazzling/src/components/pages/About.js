@@ -4,7 +4,8 @@ import "../../assets/css/about.css";
 import TeachingApproachCard from "../cards/TeachingApproachCard.js";
 import StatCard from "../cards/StatCard.js"
 import ValueCard from "../cards/ValueCard.js";
-import { teachingApproach, coreValues, statsData } from "../cards/data.js";
+import { teachingApproach, coreValues, statsData, admissionSession } from "../cards/data.js";
+
 
 const About = ({ setPage }) => {
   const styles = `
@@ -89,7 +90,7 @@ const About = ({ setPage }) => {
                   <span className="relative inline-flex rounded-full h-2 w-2 bg-secondary"></span>
                 </span>
                 <span className="text-secondary text-xs font-bold uppercase tracking-widest">
-                  Admissions Open 2024
+                  Admissions Open {admissionSession}
                 </span>
               </div>
               <h1 className="font-display text-5xl lg:text-7xl font-bold leading-tight text-white">

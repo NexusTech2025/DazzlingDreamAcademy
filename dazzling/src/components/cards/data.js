@@ -1,3 +1,5 @@
+export const admissionSession = "2026-2027";
+
 export const teachingApproach = [
   {
     icon: "psychology",
@@ -115,5 +117,48 @@ export const statsData = [
     icon: "history_edu",
     number: "7+",
     label: "Years Experience",
+  },
+];
+export const featureHighlights = [
+  {
+    icon: "diversity_3",
+    title: "Personal Counselling",
+    text: "One-on-one guidance for every student.",
+  },
+  {
+    icon: "alt_route",
+    title: "Right Guidance",
+    text: "Helping choose the best career path.",
+  },
+  {
+    icon: "psychology",
+    title: "Concept-first",
+    text: "Focus on deep understanding, not rote.",
+  },
+  {
+    icon: "forum",
+    title: "Transparent",
+    text: "Open communication with parents.",
+  },
+];
+
+export const faqData = [
+  {
+    id: "faq1",
+    question: "What is the admission process?",
+    answer:
+      "You can fill out the enquiry form above or visit our campus. We conduct a simple entrance assessment to understand the student's current level before admission.",
+  },
+  {
+    id: "faq2",
+    question: "Do you offer demo classes?",
+    answer:
+      "Yes, we offer 2 days of free demo classes for new students so they can experience our teaching methodology and environment.",
+  },
+  {
+    id: "faq3",
+    question: "What are the class timings?",
+    answer:
+      "Our regular classes run from 8:00 AM to 7:00 PM, Monday to Saturday. Specific batch timings depend on the student's class and course selection.",
   },
 ];

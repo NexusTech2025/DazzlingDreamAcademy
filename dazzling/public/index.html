@@ -35,8 +35,8 @@
         theme: {
           extend: {
             colors: {
-              primary: "#D4AF37", // Gold
-              secondary: "#00f0ff", // Neon Blue
+              primary: "#0A192F", // navy blue
+              secondary: "#D4AF37", // Gold
               accent: '#D4AF37',   
               "navy-900": "#0A192F",
               "navy-800": "#112240",
@@ -44,6 +44,8 @@
               "background-dark": "#0A192F",
               'card-bg': '#FFFFFF',
               'surface-light': '#F1F5F9',
+              "background-soft": "#F2F4F7",
+              "background-dark": "#0E2A47",
             },
             fontFamily: {
               display: ["Space Grotesk", "sans-serif"],
@@ -51,8 +53,10 @@
             },
             borderRadius: {
               DEFAULT: "0.5rem",
+              lg: "0.75rem",
               xl: "1rem",
               "2xl": "1.5rem",
+              full: "9999px",
             },
             boxShadow: {
               'paper': '0 10px 30px -5px rgba(15, 61, 94, 0.1)',
@@ -62,6 +66,8 @@
             backgroundImage: {
               "hero-pattern":
                 "url('https://images.unsplash.com/photo-1451187580459-43490279c0fa?q=80&w=2072&auto=format&fit=crop')",
+              "gold-gradient":
+                "linear-gradient(135deg, #C9A24D 0%, #E3C67B 100%)",
             },
           },
         },

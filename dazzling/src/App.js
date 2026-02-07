@@ -5,6 +5,10 @@ import Home from './components/pages/Home';
 import About from './components/pages/About';
 import Courses from './components/pages/Courses';
 import Contact from './components/pages/Contact';
+import AcademyCourses from './components/courses/AcademyCourses';
+import ComputerTechCourses from './components/courses/ComputerTechCourses';
+import FoundationCourses from './components/courses/FoundationCourses';
+
 
 const App = () => {
   const [currentPage, setPage] = useState('home');
@@ -19,6 +23,9 @@ const App = () => {
       case 'home': return <Home setPage={setPage} />;
       case 'about': return <About setPage={setPage} />;
       case 'courses': return <Courses setPage={setPage} />;
+      case 'academy-courses': return <AcademyCourses setPage={setPage} />;
+      case 'computer-courses': return <ComputerTechCourses setPage={setPage} />;
+      case 'foundation-courses': return <FoundationCourses setPage={setPage} />;
       case 'contact': return <Contact />;
       default: return <Home setPage={setPage} />;
     }

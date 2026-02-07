@@ -12,6 +12,7 @@ import {
   Layout
 } from 'lucide-react';
 import images from '../../assets/images.js';
+import { admissionSession } from '../cards/data.js';
 
 const Home = ({ setPage }) => {
   return (
@@ -32,7 +33,7 @@ const Home = ({ setPage }) => {
           <div className="lg:w-1/2">
             <div className="text-center lg:text-left py-20 lg:py-32 px-4 sm:px-6 lg:px-8">
               <span className="inline-block py-1 px-4 rounded-full border border-[#D4AF37]/50 text-[#D4AF37] text-sm font-semibold mb-6 tracking-wide">
-                ADMISSIONS OPEN 2024-25
+                ADMISSIONS OPEN {admissionSession}
               </span>
               <h1 className="text-4xl sm:text-5xl lg:text-6xl font-extrabold text-white leading-tight mb-6">
                 Aim High – <br/>

@@ -1,12 +1,14 @@
 import React, { useState, useEffect } from 'react';
 import { 
   Menu, 
-  X
+  X,
+  ChevronDown
 } from 'lucide-react';
 import images from '../../assets/images.js';
 
 const Header = ({ currentPage, setPage }) => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [isCoursesOpen, setCoursesOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
 
   useEffect(() => {
@@ -18,7 +20,6 @@ const Header = ({ currentPage, setPage }) => {
   const navLinks = [
     { id: 'home', label: 'Home' },
     { id: 'about', label: 'About Us' },
-    { id: 'courses', label: 'Courses' },
     { id: 'contact', label: 'Contact' },
   ];
 
@@ -53,6 +54,27 @@ const Header = ({ currentPage, setPage }) => {
                 {link.label}
               </button>
             ))}
+            <div className="relative">
+              <button
+                onClick={() => setCoursesOpen(!isCoursesOpen)}
+                className="flex items-center text-sm font-medium transition-colors text-gray-300 hover:text-[#D4AF37]"
+              >
+                Courses
+                <ChevronDown className={`w-4 h-4 ml-1 transition-transform duration-200 ${isCoursesOpen ? 'transform rotate-180' : ''}`} />
+              </button>
+              {isCoursesOpen && (
+                <div
+                  className="absolute mt-2 w-48 rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5"
+                  onMouseLeave={() => setCoursesOpen(false)}
+                >
+                  <div className="py-1" role="menu" aria-orientation="vertical" aria-labelledby="options-menu">
+                    <button onClick={() => { setPage('academy-courses'); setCoursesOpen(false); }} className="block w-full text-left px-4 py-2 text-sm text-gray-700 hover:bg-gray-100" role="menuitem">Academy</button>
+                    <button onClick={() => { setPage('computer-courses'); setCoursesOpen(false); }} className="block w-full text-left px-4 py-2 text-sm text-gray-700 hover:bg-gray-100" role="menuitem">Computer & Tech</button>
+                    <button onClick={() => { setPage('foundation-courses'); setCoursesOpen(false); }} className="block w-full text-left px-4 py-2 text-sm text-gray-700 hover:bg-gray-100" role="menuitem">Foundation</button>
+                  </div>
+                </div>
+              )}
+            </div>
             <button 
               onClick={() => setPage('contact')}
               className="bg-[#D4AF37] text-[#0F2A44] px-6 py-2 rounded-full text-sm font-bold hover:bg-[#bfa34b] transition-colors shadow-md hover:shadow-lg"
@@ -93,6 +115,24 @@ const Header = ({ currentPage, setPage }) => {
                 {link.label}
               </button>
             ))}
+            <button
+              onClick={() => { setPage('academy-courses'); setIsMenuOpen(false); }}
+              className="block w-full text-left px-3 py-3 rounded-md text-base font-medium text-gray-300 hover:bg-[#143A5A] hover:text-white"
+            >
+              Academy
+            </button>
+            <button
+              onClick={() => { setPage('computer-courses'); setIsMenuOpen(false); }}
+              className="block w-full text-left px-3 py-3 rounded-md text-base font-medium text-gray-300 hover:bg-[#143A5A] hover:text-white"
+            >
+              Computer & Tech
+            </button>
+            <button
+              onClick={() => { setPage('foundation-courses'); setIsMenuOpen(false); }}
+              className="block w-full text-left px-3 py-3 rounded-md text-base font-medium text-gray-300 hover:bg-[#143A5A] hover:text-white"
+            >
+              Foundation
+            </button>
           </div>
         </div>
       )}
