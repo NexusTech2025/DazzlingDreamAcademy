@@ -1,12 +1,20 @@
 {
   "files": {
-    "main.css": "/DazzlingDreamAcademy/static/css/main.31d6cfe0.css",
-    "main.js": "/DazzlingDreamAcademy/static/js/main.a7e2b217.js",
+    "main.css": "/DazzlingDreamAcademy/static/css/main.a9f8e16e.css",
+    "main.js": "/DazzlingDreamAcademy/static/js/main.dd8bd4cf.js",
+    "static/media/Hero-About Us.png": "/DazzlingDreamAcademy/static/media/Hero-About Us.3e726ab0c98d3000dd2e.png",
+    "static/media/hero2 800h.png": "/DazzlingDreamAcademy/static/media/hero2 800h.532d701c10f4a2b261cf.png",
+    "static/media/D2-Hall.png": "/DazzlingDreamAcademy/static/media/D2-Hall.73430b1af61d2285e5e0.png",
+    "static/media/army.jpg": "/DazzlingDreamAcademy/static/media/army.8487052088ed23ffe5cd.jpg",
+    "static/media/foundation 600.png": "/DazzlingDreamAcademy/static/media/foundation 600.3f22a9a67f9ed4a2b7c8.png",
+    "static/media/hero theme.png": "/DazzlingDreamAcademy/static/media/hero theme.051883d9a3c978de6d93.png",
+    "static/media/DSquare Logo 400.png": "/DazzlingDreamAcademy/static/media/DSquare Logo 400.868da83881c164e907f0.png",
     "index.html": "/DazzlingDreamAcademy/index.html",
-    "main.a7e2b217.js.map": "/DazzlingDreamAcademy/static/js/main.a7e2b217.js.map"
+    "main.a9f8e16e.css.map": "/DazzlingDreamAcademy/static/css/main.a9f8e16e.css.map",
+    "main.dd8bd4cf.js.map": "/DazzlingDreamAcademy/static/js/main.dd8bd4cf.js.map"
   },
   "entrypoints": [
-    "static/css/main.31d6cfe0.css",
-    "static/js/main.a7e2b217.js"
+    "static/css/main.a9f8e16e.css",
+    "static/js/main.dd8bd4cf.js"
   ]
 }
