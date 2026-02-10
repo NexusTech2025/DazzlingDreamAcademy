@@ -95,7 +95,7 @@ const About = ({ setPage }) => {
               </div>
               <h1 className="font-display text-5xl lg:text-7xl font-bold leading-tight text-white">
                 Master Your <br />
-                <span class="text-transparent bg-clip-text bg-gradient-to-r from-primary via-yellow-200 to-primary text-glow">
+                <span class="text-transparent bg-clip-text bg-gradient-to-r from-secondary via-yellow-200 to-secondary text-glow">
                   Future
                 </span>
                 Today
@@ -111,7 +111,7 @@ const About = ({ setPage }) => {
               </p>
               <div className="flex flex-col sm:flex-row items-center gap-4 justify-center lg:justify-start pt-4">
                 <button
-                  className="w-full sm:w-auto px-8 py-4 bg-primary hover:bg-yellow-500 text-navy-900 font-bold rounded-lg transition-all transform hover:-translate-y-1 shadow-[0_0_20px_rgba(212,175,55,0.4)] flex items-center justify-center gap-2"
+                  className="w-full sm:w-auto px-8 py-4 bg-secondary hover:bg-yellow-500 text-navy-900 font-bold rounded-lg transition-all transform hover:-translate-y-1 shadow-[0_0_20px_rgba(212,175,55,0.4)] flex items-center justify-center gap-2"
                   onClick={() => setPage("courses")}
                 >
                   <span>Explore Courses</span>
@@ -253,7 +253,7 @@ const About = ({ setPage }) => {
                 </div>
               </div>
               <div>
-                <h2 className="text-primary font-bold uppercase tracking-wider text-sm mb-2">
+                <h2 className="text-secondary font-bold uppercase tracking-wider text-sm mb-2">
                   Our Mission
                 </h2>
                 <h3 className="text-3xl lg:text-4xl font-display font-bold text-slate-900 dark:text-white mb-6">
@@ -275,7 +275,7 @@ const About = ({ setPage }) => {
                   <div className="h-12 w-1 bg-primary rounded-full"></div>
                   <div>
                     <p className="text-sm text-slate-500 dark:text-slate-400">Led by</p>
-                    <p className="text-lg font-bold text-slate-900 dark:text-white">
+                    <p className="text-secondary text-lg font-bold  dark:text-white">
                       Radhey Soni
                     </p>
                   </div>
